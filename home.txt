@@ -12,12 +12,6 @@
 |   |-- lib -> usr/lib
 |   `-- usr
 |       |-- bin
-|       |   `-- adb
-|       |       |-- Storage
-|       |       |-- check_jailbreak
-|       |       |-- help
-|       |       |-- temp_dir
-|       |       `-- version
 |       |-- include
 |       |   |-- AD
 |       |   |   |-- AD
@@ -25,24 +19,122 @@
 |       |   |   |   |-- h
 |       |   |   |   |   |-- README.md
 |       |   |   |   |   |-- ad_system.h
-|       |   |   |   |   |-- old
-|       |   |   |   |   |   `-- ad_system.h
-|       |   |   |   |   `-- xcode -> ../xcode
+|       |   |   |   |   `-- xcode
+|       |   |   |   |       `-- ad_system.h -> ../../../../../local/xcode/ad_system.h
 |       |   |   |   `-- hpp
 |       |   |   |       |-- README.md
+|       |   |   |       |-- _file.hpp
+|       |   |   |       |-- _rm_.hpp
 |       |   |   |       |-- ad_system.hpp
-|       |   |   |       |-- old
-|       |   |   |       |   `-- ad_system.hpp
 |       |   |   |       `-- xcode
+|       |   |   |           `-- ad_system.hpp -> ../../../../../local/xcode/ad_system.hpp
 |       |   |   |-- h
 |       |   |   |   `-- system -> ../../system
 |       |   |   `-- hpp
 |       |   |-- AD_h -> AD/AD/h
-|       |   |-- AD_hpp -> /var/AD/AD/usr/include/AD/AD/hpp
-|       |   |-- iOS_SDK
-|       |   |   |-- README.md
-|       |   |   `-- ln_ios_sdk.sh
+|       |   |-- AD_hpp -> AD/AD/hpp
+|       |   |-- SDKs
+|       |   |   |-- MacOSX -> ../../local/Mac_SDK/
+|       |   |   `-- iPhoneOS -> ../../local/iOS_SDK
 |       |   |-- kernel
+|       |   |   |-- IOKit
+|       |   |   |   |-- AppleKeyStoreInterface.h
+|       |   |   |   |-- IOBSD.h
+|       |   |   |   |-- IOBufferMemoryDescriptor.h
+|       |   |   |   |-- IOCPU.h
+|       |   |   |   |-- IOCatalogue.h
+|       |   |   |   |-- IOCommand.h
+|       |   |   |   |-- IOCommandGate.h
+|       |   |   |   |-- IOCommandPool.h
+|       |   |   |   |-- IOCommandQueue.h
+|       |   |   |   |-- IOConditionLock.h
+|       |   |   |   |-- IODMACommand.h
+|       |   |   |   |-- IODMAController.h
+|       |   |   |   |-- IODMAEventSource.h
+|       |   |   |   |-- IODataQueue.h
+|       |   |   |   |-- IODataQueueShared.h
+|       |   |   |   |-- IODeviceMemory.h
+|       |   |   |   |-- IODeviceTreeSupport.h
+|       |   |   |   |-- IOEventSource.h
+|       |   |   |   |-- IOFilterInterruptEventSource.h
+|       |   |   |   |-- IOHibernatePrivate.h
+|       |   |   |   |-- IOInterleavedMemoryDescriptor.h
+|       |   |   |   |-- IOInterruptAccounting.h
+|       |   |   |   |-- IOInterruptAccountingPrivate.h
+|       |   |   |   |-- IOInterruptController.h
+|       |   |   |   |-- IOInterruptEventSource.h
+|       |   |   |   |-- IOInterrupts.h
+|       |   |   |   |-- IOKernelReportStructs.h
+|       |   |   |   |-- IOKernelReporters.h
+|       |   |   |   |-- IOKitDebug.h
+|       |   |   |   |-- IOKitDiagnosticsUserClient.h
+|       |   |   |   |-- IOKitKeys.h
+|       |   |   |   |-- IOKitKeysPrivate.h
+|       |   |   |   |-- IOKitServer.h
+|       |   |   |   |-- IOLib.h
+|       |   |   |   |-- IOLocks.h
+|       |   |   |   |-- IOLocksPrivate.h
+|       |   |   |   |-- IOMapper.h
+|       |   |   |   |-- IOMemoryCursor.h
+|       |   |   |   |-- IOMemoryDescriptor.h
+|       |   |   |   |-- IOMessage.h
+|       |   |   |   |-- IOMultiMemoryDescriptor.h
+|       |   |   |   |-- IONVRAM.h
+|       |   |   |   |-- IONotifier.h
+|       |   |   |   |-- IOPMGR.h
+|       |   |   |   |-- IOPlatformActions.h
+|       |   |   |   |-- IOPlatformExpert.h
+|       |   |   |   |-- IOPolledInterface.h
+|       |   |   |   |-- IORPC.h
+|       |   |   |   |-- IORangeAllocator.h
+|       |   |   |   |-- IORegistryEntry.h
+|       |   |   |   |-- IOReportMacros.h
+|       |   |   |   |-- IOReportTypes.h
+|       |   |   |   |-- IOReturn.h
+|       |   |   |   |-- IOService.h
+|       |   |   |   |-- IOServicePM.h
+|       |   |   |   |-- IOSharedDataQueue.h
+|       |   |   |   |-- IOSharedLock.h
+|       |   |   |   |-- IOStatistics.h
+|       |   |   |   |-- IOStatisticsPrivate.h
+|       |   |   |   |-- IOSubMemoryDescriptor.h
+|       |   |   |   |-- IOSyncer.h
+|       |   |   |   |-- IOTimeStamp.h
+|       |   |   |   |-- IOTimerEventSource.h
+|       |   |   |   |-- IOTypes.h
+|       |   |   |   |-- IOUserClient.h
+|       |   |   |   |-- IOUserServer.h
+|       |   |   |   |-- IOWorkLoop.h
+|       |   |   |   |-- OSMessageNotification.h
+|       |   |   |   |-- PassthruInterruptController.h
+|       |   |   |   |-- assert.h
+|       |   |   |   |-- nvram
+|       |   |   |   |   `-- IONVRAMController.h
+|       |   |   |   |-- perfcontrol
+|       |   |   |   |   `-- IOPerfControl.h
+|       |   |   |   |-- platform
+|       |   |   |   |   |-- AppleMacIO.h
+|       |   |   |   |   |-- AppleMacIODevice.h
+|       |   |   |   |   |-- AppleNMI.h
+|       |   |   |   |   |-- ApplePlatformExpert.h
+|       |   |   |   |   `-- IOPlatformIO.h
+|       |   |   |   |-- pwr_mgt
+|       |   |   |   |   |-- IOPM.h
+|       |   |   |   |   |-- IOPMLibDefs.h
+|       |   |   |   |   |-- IOPMPowerSource.h
+|       |   |   |   |   |-- IOPMPowerSourceList.h
+|       |   |   |   |   |-- IOPMPrivate.h
+|       |   |   |   |   |-- IOPMinformee.h
+|       |   |   |   |   |-- IOPMinformeeList.h
+|       |   |   |   |   |-- IOPMlog.h
+|       |   |   |   |   |-- IOPMpowerState.h
+|       |   |   |   |   |-- IOPowerConnection.h
+|       |   |   |   |   `-- RootDomain.h
+|       |   |   |   |-- rtc
+|       |   |   |   |   `-- IORTCController.h
+|       |   |   |   |-- system.h
+|       |   |   |   `-- system_management
+|       |   |   |       `-- IOWatchDogTimer.h
 |       |   |   `-- sys
 |       |   |       |-- Makefile
 |       |   |       |-- _endian.h
@@ -355,15 +447,12 @@
 |       |   |       |-- wait.h
 |       |   |       |-- work_interval.h
 |       |   |       `-- xattr.h
-|       |   |-- system
-|       |   |   |-- kern_control.h
-|       |   |   |-- kern_memorystatus.h
-|       |   |   |-- libproc.h
-|       |   |   |-- proc_info.h
-|       |   |   `-- route.h
-|       |   `-- xcode
-|       |       |-- ad_system.h
-|       |       `-- ad_system.hpp
+|       |   `-- system
+|       |       |-- kern_control.h
+|       |       |-- kern_memorystatus.h
+|       |       |-- libproc.h
+|       |       |-- proc_info.h
+|       |       `-- route.h
 |       |-- lib
 |       |   |-- a
 |       |   |   `-- README.md
@@ -371,6 +460,28 @@
 |       |   |   `-- README.md
 |       |   `-- so
 |       |       `-- README.md
+|       |-- local
+|       |   |-- Mac_SDK
+|       |   |   |-- README.md
+|       |   |   `-- ln_mac_sdk.sh
+|       |   |-- Old
+|       |   |   `-- include
+|       |   |       |-- h
+|       |   |       |   `-- old_AD
+|       |   |       |       `-- ad_system.h
+|       |   |       `-- hpp
+|       |   |           `-- old_AD
+|       |   |               `-- ad_system.hpp
+|       |   |-- iOS_SDK
+|       |   |   |-- README.md
+|       |   |   `-- ln_ios_sdk.sh
+|       |   |-- share -> ../share/local_share
+|       |   `-- xcode
+|       |       |-- ad_system.h -> include/ad_system.h
+|       |       |-- ad_system.hpp -> include/ad_system.hpp
+|       |       `-- include
+|       |           |-- ad_system.h
+|       |           `-- ad_system.hpp
 |       `-- share
 |           |-- doc
 |           `-- man
@@ -381,6 +492,7 @@
 |               |-- man5
 |               |-- man7
 |               `-- man8
+|-- AD-README.md
 |-- Develop
 |   |-- Library -> ../AD/Library
 |   |-- System -> ../AD/System
@@ -404,8 +516,10 @@
 |       |-- Swift
 |       |-- objc
 |       `-- objc++
+|-- LICENSE
 |-- Library -> AD/Library
 |-- README.md
+|-- Terminal
 |-- Thank_you
 |   |-- Apple_xun.tar.zst
 |   |-- README.md
@@ -426,13 +540,9 @@
 |   `-- usr.bin.entitlements
 |       `-- powerlogHelperd
 |           `-- entitlements.plist
+|-- home.txt
 |-- log
-|   |-- README.md
-|   `-- lib
-|       `-- Mistake
-|           |-- lib.1.log
-|           `-- lib.log
-`-- mnt
-    `-- AD_UP
+|   `-- README.md
+`-- update.sh
 
-87 directories, 347 files
+100 directories, 444 files
